@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff7f7;
+        }
+
+        .testimonial-section {
+            width: 100%;
+            min-height: 400px;
+            background: #fff7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 40px 20px;
+        }
+
+        /* Profile Image */
+        .profile {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Name */
+        .name {
+            font-size: 14px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 4px;
+        }
+
+        .job {
+            font-size: 9px;
+            color: #999;
+            margin-bottom: 22px;
+        }
+
+        /* Arrows */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            border: 1px solid #ddd;
+            background: transparent;
+            color: #bbb;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .arrow-left {
+            left: 29%;
+        }
+
+        .arrow-right {
+            right: 29%;
+        }
+
+        /* Testimonial */
+        .testimonial {
+            text-align: center;
+            max-width: 360px;
+        }
+
+        .testimonial p {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Rating dots */
+        .dots {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            margin-top: 18px;
+        }
+
+        .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #333;
+        }
+
+        .dot.active {
+            background: #e64b55;
+        }
+
+        /* Bottom text */
+        .bottom-text {
+            margin-top: 25px;
+            font-size: 9px;
+            color: #aaa;
+            text-align: center;
+        }
+
+        /* Logos */
+        .logos {
+            width: 80%;
+            max-width: 900px;
+            margin-top: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 12px;
+            font-weight: bold;
+            color: #777;
+            opacity: 0.75;
+        }
+
+        .logo span {
+            color: #aaa;
+            font-weight: normal;
+        }
+
+        @media (max-width: 600px) {
+
+            .arrow-left {
+                left: 10%;
+            }
+
+            .arrow-right {
+                right: 10%;
+            }
+
+            .logos {
+                width: 100%;
+                gap: 15px;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="testimonial-section">
+
+        <!-- Profile Image -->
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile">
+        </div>
+
+        <!-- Name -->
+        <div class="name">Mr. Arun Teja</div>
+        <div class="job">Graphic Designer</div>
+
+        <!-- Arrows -->
+        <button class="arrow arrow-left">&#8249;</button>
+        <button class="arrow arrow-right">&#8250;</button>
+
+        <!-- Testimonial -->
+        <div class="testimonial">
+            <p>
+                Being a fully packed professional tool of premium
+                build and design
+            </p>
+
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot active"></div>
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <!-- Bottom sentence -->
+        <div class="bottom-text">
+            THANKS FOR PROVIDING SUCH A GREAT PRODUCT SERVICE FOR ME!
+        </div>
+
+        <!-- Logos -->
+        <div class="logos">
+            <div class="logo">SWEETY</div>
+            <div class="logo">GOLDEN<span>GLOW</span></div>
+            <div class="logo">▣ MEDI<span>CARE</span></div>
+            <div class="logo">GOLDEN<span>GLOW</span></div>
+            <div class="logo">SWEETY</div>
+            <div class="logo">GOLDEN<span>GLOW</span></div>
+        </div>
+
+    </section>
+
+</body>
+</html>
